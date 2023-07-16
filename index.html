@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Nanum+Myeongjo&family=PT+Serif&family=Pacifico&family=Slabo+27px&display=swap" rel="stylesheet">
+
+  <title>Fitness Track</title>
+  <link rel="stylesheet" href="style.css"> <!-- CSS-->
+  <!--<script src="main.js"></script>-->
+  
+</head>
+<body>
+  <header>
+    <h1>Fitness Tracker</h1>
+  </header>
+  <h1>Fit Everyday! Win Everyday!</h1>
+
+  <main>
+    <section class="tracker">
+      <h2>Steps Tracker</h2>
+      <div class="input-group">
+        <label for="steps" class="up-head">Steps</label>
+        <!--<input type="number" id="steps" name="steps" min="0">-->
+      </div>
+      <button onclick="updateStepCount">Track</button>
+    </section>
+
+    <section class="tracker">
+      <h2>Exercise Tracker</h2>
+      <div class="input-group">
+        <label for="exercise">Exercise</label>
+        <select name="exercise" id="exercise">
+          <option value="Aerobic exercise">Aerobics</option>
+          <option value="Circuit training">Circuit training</option>
+          <option value="Strength training">Strength training</option>
+          <option value="Yoga">Yoga</option>
+          <option value="Running">Running</option>
+          <option value="Swimming">Swimming</option>
+          <option value="Stretching">Stretching</option>
+        </select>
+      </div>
+      <button onclick="trackExercise()">Track</button>
+    </section>
+
+    <section class="tracker">
+      <h2>Meal Chart</h2>
+      <div class="input-group">
+        <label for="meal">Meal</label>
+        <input type="text" id="meal" name="meal">
+      </div>
+      <button onclick="trackMeal()">Track</button>
+    </section>
+
+    <section class="tracker">
+      <h2>Weight</h2>
+      <div class="input-group">
+        <label for="weight">Weight(in kgs)</label>
+        <input type="text" id="meal" name="meal">
+      </div>
+    </section>
+
+    <section class="tracker">
+      <h2>Age</h2>
+        <div class="input-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age">
+        </div>
+     </section>
+  </main>
+
+  <h1>About Fitness Tracker</h1>
+  <div class="about">
+    <img src="images/img1.png" alt="img1" class="img-1" width="300px" height="300px">
+    <p>Nutrition means getting the food and nourishment that you need for health and growth.</p>
+    <p>According to the World Health Organization, a nutrient is a substance required by the body for survival, 
+      growth, and reproduction. In other words, nutrients are what give us energy and allow our bodies to perform 
+      their essential functions. Every organism on our earth needs nutrients; they are necessary for life! </p>
+      <p>The Meal tracker will help you to give your preferred Healthy Meal of the day.</p>
+  </div>
+  <div class="about">
+    <img src="images/img2.webp" alt="img2" class="img-2" width="300px" height="300px">
+    <p> A well-balanced diet provides all of the:</p>
+
+      <p>energy you need to keep active throughout the day
+      nutrients you need for growth and repair, helping you to stay strong and healthy and help to prevent diet-related illness, such as some cancers
+      Keeping active and eating a healthy balanced diet can also help you to maintain a healthy weight.</p>
+      <p>There are two types of essential nutrients: macronutrients and micronutrients. 
+        Macronutrients include protein, carbohydrates, fats, and water. Micronutrients include vitamins and minerals.</p>
+      <p>We help you to have a balanced diet.</p>
+
+  </div>
+  
+  <div class="about">
+    <img src="images/img3.webp" alt="img3" class="img-1"width="300px" height="300px">
+    <p>Regular exercise helps prevent or manage many health problems and concerns, including:</p>
+      <p>Stroke, 
+       Metabolic syndrome,
+       High blood pressure,
+       Type 2 diabetes,
+       Depression,
+       Anxiety,
+       Many types of cancer
+      Arthritis
+      Falls
+      It can also help improve cognitive function and helps lower the risk of death from all causes.</p>
+      <p>Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently.</p>
+      <p>This fitness tracker will help you to track your physical fitness daily</p>
+    </div>
+
+    <div class="about">
+      <img src="images/img4.png" alt="img4" class="img-2" width="500px" height="300px">
+     <p>Physical activity can help you think, learn, problem-solve, and enjoy an emotional balance. 
+      It can improve memory and reduce anxiety or depression.
+      Regular physical activity can also reduce your risk of cognitive decline, including dementia</p>
+     <p></p>
+    </div>
+
+   <footer>
+    <p>&copy; 2023 Fitness Tracker. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
